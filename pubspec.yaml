@@ -1,8 +1,9 @@
 name: flutter_shortcuts
-description: A set of helpful widgets for rapid prototyping.
+description: A set of helpful Flutter widgets for rapid prototyping.
 version: 0.0.1
-author:
-homepage:
+authors:
+  - George Lesica <george@lesica.com>
+homepage: https://github.com/glesica/flutter_shortcuts
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
