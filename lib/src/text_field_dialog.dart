@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 /// A simple dialog that contains a title, a single [TextField],
-/// an "OK" button, and a "Cancel" button.
+/// an "OK" button, and a "CANCEL" button.
 ///
 /// If the "OK" button is pressed then the popped value will be
-/// the contents of the text field. If the "Cancel" button is
+/// the contents of the text field. If the "CANCEL" button is
 /// pressed or the dialog is otherwise dismissed, then the popped
 /// value will be `null`.
 ///
@@ -56,6 +56,7 @@ class TextFieldDialog extends StatelessWidget {
         _textField(context),
         _buttonBar(context),
       ],
+      contentPadding: EdgeInsets.zero,
     );
   }
 
@@ -74,7 +75,7 @@ class TextFieldDialog extends StatelessWidget {
 
   Widget _cancelButton(BuildContext context) {
     return FlatButton(
-      child: const Text('Cancel'),
+      child: const Text('CANCEL'),
       key: Key('cancel'),
       onPressed: () => _handleCancel(context),
     );

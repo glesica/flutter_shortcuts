@@ -18,7 +18,7 @@ class DialogsExamples extends StatelessWidget {
               builder: (context) {
                 return AlertDialog(
                   title: const Text('Your Value'),
-                  content: Text(value),
+                  content: Text(value ?? 'null'),
                 );
               },
             );
